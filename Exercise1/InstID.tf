@@ -18,7 +18,7 @@ data "aws_ami" "amiID" {
   owners = ["099720109477"]
 }
 
-# Output resource block
+# Output block
 output "instance_id" {
   description = "AMI ID of ubuntu instnace"
   value       = data.aws_ami.amiID.id
